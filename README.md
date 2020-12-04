@@ -20,3 +20,5 @@ Lab task from the "HTML to PostGIS" subject (1.5h given).
 
 ### Workflow
 You press `Draw!` button and it calls all three API points connected with draws (you can get *APPLE*, *BANANA*, *PLUM*). The button is disabled untill all three results are ready (using `fetch` api and `Promice.all`) and after that they are all simultaneously displayed. If there is at least two similar slots drawn then the whole result is stored in the database and the table below the button is updated.
+<br/>
+**NOTE**: Special 2-seconds delay added using ASP.NET Core middleware, so we can see in action how `Draw!` button is disabled.
