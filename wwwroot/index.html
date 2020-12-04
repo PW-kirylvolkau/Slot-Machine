@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="card m-3">
+        <div class="card-header">
+            <h3>Slot machine</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">First</th>
+                                <th scope="col">Second</th>
+                                <th scope="col">Third</th>
+                            </tr>
+                        </thead>
+                        <tbody id="draw-table" >
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button class="btn btn-success" id="draw_button" onclick="draw()">Draw!</button>
+            </div>
+           
+        </div>
+    </div>
+    <div class="card m-3">
+        <div class="card-header">
+            <h3>Results</h3>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Second</th>
+                    <th scope="col">Third</th>
+                </tr>
+                </thead>
+                <tbody id="res-table" >
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
